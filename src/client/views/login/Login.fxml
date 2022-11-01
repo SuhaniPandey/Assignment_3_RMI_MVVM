@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<AnchorPane prefHeight="326.0" prefWidth="306.0" style="-fx-background-color: e0fbfc;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.views.login.LoginController">
+   <children>
+      <TextField fx:id="usernameTextField" blendMode="SRC_ATOP" layoutX="70.0" layoutY="129.0" prefHeight="31.0" prefWidth="203.0" promptText="Username" style="-fx-background-color: dee2e6;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="passwordtextField" blendMode="DARKEN" layoutX="70.0" layoutY="179.0" prefHeight="31.0" prefWidth="203.0" promptText="Password" style="-fx-background-color: dee2e6;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="37.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../username.png" />
+
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="38.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../password.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="48.0" layoutX="142.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../user.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="135.0" layoutY="230.0" mnemonicParsing="false" onAction="#onLoginButton" style="-fx-background-color: #52aee3;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="54.0" layoutY="274.0" text="Don't have an account?" textFill="#24202f" />
+      <Button layoutX="185.0" layoutY="270.0" mnemonicParsing="false" onAction="#onRegisterButton" style="-fx-background-color: #52aee3;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="label" layoutX="9.0" layoutY="300.0" prefHeight="17.0" prefWidth="288.0" text="Label" textFill="RED" />
+      <Label layoutX="127.0" layoutY="92.0" prefHeight="25.0" prefWidth="63.0" text="Log In">
+         <font>
+            <Font name="Microsoft JhengHei Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

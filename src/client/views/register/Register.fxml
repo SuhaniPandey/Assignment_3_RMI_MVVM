@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<AnchorPane prefHeight="345.0" prefWidth="293.0" style="-fx-background-color: e0fbfc;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.views.register.RegisterController">
+   <children>
+      <TextField fx:id="usernameRegister" layoutX="63.0" layoutY="119.0" prefHeight="31.0" prefWidth="203.0" promptText="Username" style="-fx-background-color: dee2e6;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="passswordRegister" layoutX="63.0" layoutY="161.0" prefHeight="31.0" prefWidth="203.0" promptText="Enter new password" style="-fx-background-color: dee2e6;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="reenterRegister" layoutX="63.0" layoutY="203.0" prefHeight="31.0" prefWidth="203.0" promptText="Re-enter password" style="-fx-background-color: dee2e6;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="30.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../username.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="28.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../password.png" />
+         </image>
+      </ImageView>
+
+      <Button layoutX="116.0" layoutY="247.0" mnemonicParsing="false" onAction="#onSignUpButton" style="-fx-background-color: #52aee3;" text="Sign up" textFill="#fff5f5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="70.0" layoutY="284.0" mnemonicParsing="false" onAction="#onAlreadyHaveAnAccountButton" style="-fx-background-color: #52aee3;" text="Already have an account" textFill="#fff5f5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="56.0" fitWidth="38.0" layoutX="132.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../user.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="116.0" layoutY="85.0" text="Register">
+         <font>
+            <Font name="Microsoft JhengHei Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="label" layoutX="16.0" layoutY="319.0" prefHeight="17.0" prefWidth="257.0" text="Label" textFill="RED" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.views.chat.ChatController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="400.0" prefWidth="600.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Pane prefHeight="51.0" prefWidth="175.0" style="-fx-background-color: #a1f073;">
+                     <children>
+                        <Label layoutX="31.0" layoutY="12.0" text="Online users">
+                           <font>
+                              <Font name="Trebuchet MS" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <ListView fx:id="usersList" layoutY="52.0" prefHeight="289.0" prefWidth="175.0" />
+                  <Button layoutX="4.0" layoutY="349.0" mnemonicParsing="false" onAction="#onSelectUserButtonIndivisualChat" prefHeight="39.0" prefWidth="167.0" style="-fx-background-color: caf0f8;" text="Select the user">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Pane layoutX="1.0" prefHeight="51.0" prefWidth="416.0" style="-fx-background-color: #a1f073;">
+                     <children>
+                        <Label layoutX="145.0" layoutY="11.0" text="Chat">
+                           <font>
+                              <Font name="Trebuchet MS" size="25.0" />
+                           </font>
+                        </Label>
+
+                        <Button layoutX="258.0" layoutY="3.0" mnemonicParsing="false" onAction="#onBackToGlobalChat" prefHeight="45.0" prefWidth="155.0" style="-fx-background-color: c7f9cc;" text="Back to Global Chat">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <ListView fx:id="chatViewsIndivisualChat" layoutX="1.0" layoutY="54.0" prefHeight="289.0" prefWidth="416.0" />
+                  <TextField fx:id="messageTextField" layoutX="6.0" layoutY="350.0" prefHeight="39.0" prefWidth="337.0" promptText="Say hi to your friends" style="-fx-background-color: fefae0;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="351.0" layoutY="350.0" mnemonicParsing="false" onAction="#onSendButton" prefHeight="39.0" prefWidth="60.0" style="-fx-background-color: caf0f8;" text="Send">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
