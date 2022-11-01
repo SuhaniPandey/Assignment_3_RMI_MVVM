@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <AnchorPane prefHeight="326.0" prefWidth="306.0" style="-fx-background-color: e0fbfc;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.views.login.LoginController">
    <children>
       <TextField fx:id="usernameTextField" blendMode="SRC_ATOP" layoutX="70.0" layoutY="129.0" prefHeight="31.0" prefWidth="203.0" promptText="Username" style="-fx-background-color: dee2e6;">

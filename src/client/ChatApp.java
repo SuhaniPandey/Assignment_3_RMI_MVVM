@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 
 public class ChatApp extends Application
 {
+
   @Override public void start(Stage stage) throws Exception
   {
     ClientFactory clientFactory= new ClientFactory();
