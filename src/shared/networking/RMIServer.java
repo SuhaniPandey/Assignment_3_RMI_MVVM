@@ -13,7 +13,6 @@ public interface RMIServer extends Remote
   boolean addUser(User user1) throws RemoteException;
 
   boolean login(User user) throws RemoteException;
-  //List<Message> getMessages();
   void sendMessage(Message message) throws RemoteException;
 
   List<Message>  getPreviousMessages() throws RemoteException;
